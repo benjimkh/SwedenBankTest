@@ -1,0 +1,540 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		68B50D25252F0AF4007A6891 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B50D24252F0AF4007A6891 /* Constants.swift */; };
+		8E14050A252B363C0084FCBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E140509252B363C0084FCBC /* AppDelegate.swift */; };
+		8E14050C252B363C0084FCBC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E14050B252B363C0084FCBC /* SceneDelegate.swift */; };
+		8E14050E252B363C0084FCBC /* BankListsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E14050D252B363C0084FCBC /* BankListsVC.swift */; };
+		8E140514252B363C0084FCBC /* SwedBankHomeWork.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8E140512252B363C0084FCBC /* SwedBankHomeWork.xcdatamodeld */; };
+		8E140516252B363F0084FCBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E140515252B363F0084FCBC /* Assets.xcassets */; };
+		8E140519252B363F0084FCBC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E140517252B363F0084FCBC /* LaunchScreen.storyboard */; };
+		8E140535252B3BFB0084FCBC /* BankDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E140534252B3BFB0084FCBC /* BankDetailsVC.swift */; };
+		8E140538252B3C1F0084FCBC /* InnerDataVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E140537252B3C1F0084FCBC /* InnerDataVC.swift */; };
+		8E140542252B3D300084FCBC /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E140541252B3D300084FCBC /* Globals.swift */; };
+		8E140544252B3D3B0084FCBC /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E140543252B3D3B0084FCBC /* Extentions.swift */; };
+		8E140547252B3D660084FCBC /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E140546252B3D660084FCBC /* APIManager.swift */; };
+		8E140549252B3F360084FCBC /* BankListsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E140548252B3F360084FCBC /* BankListsVM.swift */; };
+		8E14054B252B48610084FCBC /* RegionsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E14054A252B48610084FCBC /* RegionsCell.swift */; };
+		8E14054D252B488F0084FCBC /* LocationsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E14054C252B488F0084FCBC /* LocationsCell.swift */; };
+		8E14054F252B48990084FCBC /* InnerDataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E14054E252B48990084FCBC /* InnerDataCell.swift */; };
+		8E140551252B4D290084FCBC /* BankModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E140550252B4D290084FCBC /* BankModel.swift */; };
+		8E140553252B667A0084FCBC /* PresistanceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E140552252B667A0084FCBC /* PresistanceManager.swift */; };
+		8ED6581D252C6319000A1BF6 /* BankObject+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED6581B252C6319000A1BF6 /* BankObject+CoreDataClass.swift */; };
+		8ED6581E252C6319000A1BF6 /* BankObject+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED6581C252C6319000A1BF6 /* BankObject+CoreDataProperties.swift */; };
+		8ED65820252C983E000A1BF6 /* ParentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED6581F252C983E000A1BF6 /* ParentVC.swift */; };
+		8ED65822252C98C9000A1BF6 /* HelperCustomNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED65821252C98C9000A1BF6 /* HelperCustomNavigation.swift */; };
+		8ED65824252CC335000A1BF6 /* iGap_fontico.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8ED65823252CC334000A1BF6 /* iGap_fontico.ttf */; };
+		8ED65826252CD8E5000A1BF6 /* AvatarHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED65825252CD8E5000A1BF6 /* AvatarHolder.swift */; };
+		8ED65828252D8941000A1BF6 /* BankDetailsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED65827252D8941000A1BF6 /* BankDetailsVM.swift */; };
+		8ED6582A252D9F6D000A1BF6 /* InnerDataVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED65829252D9F6D000A1BF6 /* InnerDataVM.swift */; };
+		8ED6582C252DC136000A1BF6 /* HelpercustomIndicatorRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED6582B252DC136000A1BF6 /* HelpercustomIndicatorRefresh.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		68B50D24252F0AF4007A6891 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		8E140506252B363C0084FCBC /* SwedBankHomeWork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwedBankHomeWork.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E140509252B363C0084FCBC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8E14050B252B363C0084FCBC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		8E14050D252B363C0084FCBC /* BankListsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankListsVC.swift; sourceTree = "<group>"; };
+		8E140513252B363C0084FCBC /* SwedBankHomeWork.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SwedBankHomeWork.xcdatamodel; sourceTree = "<group>"; };
+		8E140515252B363F0084FCBC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8E140518252B363F0084FCBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8E14051A252B363F0084FCBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E140523252B363F0084FCBC /* SwedBankHomeWorkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwedBankHomeWorkTests.swift; sourceTree = "<group>"; };
+		8E140525252B363F0084FCBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E140534252B3BFB0084FCBC /* BankDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankDetailsVC.swift; sourceTree = "<group>"; };
+		8E140537252B3C1F0084FCBC /* InnerDataVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InnerDataVC.swift; sourceTree = "<group>"; };
+		8E140541252B3D300084FCBC /* Globals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
+		8E140543252B3D3B0084FCBC /* Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
+		8E140546252B3D660084FCBC /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		8E140548252B3F360084FCBC /* BankListsVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankListsVM.swift; sourceTree = "<group>"; };
+		8E14054A252B48610084FCBC /* RegionsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionsCell.swift; sourceTree = "<group>"; };
+		8E14054C252B488F0084FCBC /* LocationsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsCell.swift; sourceTree = "<group>"; };
+		8E14054E252B48990084FCBC /* InnerDataCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InnerDataCell.swift; sourceTree = "<group>"; };
+		8E140550252B4D290084FCBC /* BankModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankModel.swift; sourceTree = "<group>"; };
+		8E140552252B667A0084FCBC /* PresistanceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresistanceManager.swift; sourceTree = "<group>"; };
+		8ED6581B252C6319000A1BF6 /* BankObject+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "BankObject+CoreDataClass.swift"; path = "SwedBankHomeWork/SwedBank/BankObject+CoreDataClass.swift"; sourceTree = "<group>"; };
+		8ED6581C252C6319000A1BF6 /* BankObject+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "BankObject+CoreDataProperties.swift"; path = "SwedBankHomeWork/SwedBank/BankObject+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		8ED6581F252C983E000A1BF6 /* ParentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentVC.swift; sourceTree = "<group>"; };
+		8ED65821252C98C9000A1BF6 /* HelperCustomNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperCustomNavigation.swift; sourceTree = "<group>"; };
+		8ED65823252CC334000A1BF6 /* iGap_fontico.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = iGap_fontico.ttf; sourceTree = "<group>"; };
+		8ED65825252CD8E5000A1BF6 /* AvatarHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarHolder.swift; sourceTree = "<group>"; };
+		8ED65827252D8941000A1BF6 /* BankDetailsVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankDetailsVM.swift; sourceTree = "<group>"; };
+		8ED65829252D9F6D000A1BF6 /* InnerDataVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InnerDataVM.swift; sourceTree = "<group>"; };
+		8ED6582B252DC136000A1BF6 /* HelpercustomIndicatorRefresh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpercustomIndicatorRefresh.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8E140503252B363C0084FCBC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8E1404FD252B363C0084FCBC = {
+			isa = PBXGroup;
+			children = (
+				8ED6581B252C6319000A1BF6 /* BankObject+CoreDataClass.swift */,
+				8ED6581C252C6319000A1BF6 /* BankObject+CoreDataProperties.swift */,
+				8E140508252B363C0084FCBC /* SwedBankHomeWork */,
+				8E140522252B363F0084FCBC /* SwedBankHomeWorkTests */,
+				8E140507252B363C0084FCBC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8E140507252B363C0084FCBC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8E140506252B363C0084FCBC /* SwedBankHomeWork.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8E140508252B363C0084FCBC /* SwedBankHomeWork */ = {
+			isa = PBXGroup;
+			children = (
+				8ED65823252CC334000A1BF6 /* iGap_fontico.ttf */,
+				8E140509252B363C0084FCBC /* AppDelegate.swift */,
+				8E14050B252B363C0084FCBC /* SceneDelegate.swift */,
+				8E14052E252B39890084FCBC /* SwedBank */,
+				8E140515252B363F0084FCBC /* Assets.xcassets */,
+				8E140517252B363F0084FCBC /* LaunchScreen.storyboard */,
+				8E14051A252B363F0084FCBC /* Info.plist */,
+				8E140512252B363C0084FCBC /* SwedBankHomeWork.xcdatamodeld */,
+			);
+			path = SwedBankHomeWork;
+			sourceTree = "<group>";
+		};
+		8E140522252B363F0084FCBC /* SwedBankHomeWorkTests */ = {
+			isa = PBXGroup;
+			children = (
+				8E140523252B363F0084FCBC /* SwedBankHomeWorkTests.swift */,
+				8E140525252B363F0084FCBC /* Info.plist */,
+			);
+			path = SwedBankHomeWorkTests;
+			sourceTree = "<group>";
+		};
+		8E14052E252B39890084FCBC /* SwedBank */ = {
+			isa = PBXGroup;
+			children = (
+				8E140532252B39C10084FCBC /* View */,
+				8E140531252B39B90084FCBC /* Model */,
+				8E140530252B39AD0084FCBC /* ViewModel */,
+				8E14052F252B39A50084FCBC /* Controller */,
+				8E140545252B3D440084FCBC /* Helpers */,
+			);
+			path = SwedBank;
+			sourceTree = "<group>";
+		};
+		8E14052F252B39A50084FCBC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8E140533252B3BD70084FCBC /* Main */,
+				8E140536252B3C090084FCBC /* Detail */,
+				8E140539252B3C240084FCBC /* InnerData */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8E140530252B39AD0084FCBC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8E14053A252B3C430084FCBC /* Main */,
+				8E14053B252B3C560084FCBC /* Detail */,
+				8E14053C252B3C5B0084FCBC /* InnerData */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8E140531252B39B90084FCBC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8E140550252B4D290084FCBC /* BankModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8E140532252B39C10084FCBC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8E14054A252B48610084FCBC /* RegionsCell.swift */,
+				8E14054C252B488F0084FCBC /* LocationsCell.swift */,
+				8E14054E252B48990084FCBC /* InnerDataCell.swift */,
+				8ED65825252CD8E5000A1BF6 /* AvatarHolder.swift */,
+				8ED6582B252DC136000A1BF6 /* HelpercustomIndicatorRefresh.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8E140533252B3BD70084FCBC /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				8E14050D252B363C0084FCBC /* BankListsVC.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		8E140536252B3C090084FCBC /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				8E140534252B3BFB0084FCBC /* BankDetailsVC.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		8E140539252B3C240084FCBC /* InnerData */ = {
+			isa = PBXGroup;
+			children = (
+				8E140537252B3C1F0084FCBC /* InnerDataVC.swift */,
+			);
+			path = InnerData;
+			sourceTree = "<group>";
+		};
+		8E14053A252B3C430084FCBC /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				8E140548252B3F360084FCBC /* BankListsVM.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		8E14053B252B3C560084FCBC /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				8ED65827252D8941000A1BF6 /* BankDetailsVM.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		8E14053C252B3C5B0084FCBC /* InnerData */ = {
+			isa = PBXGroup;
+			children = (
+				8ED65829252D9F6D000A1BF6 /* InnerDataVM.swift */,
+			);
+			path = InnerData;
+			sourceTree = "<group>";
+		};
+		8E140545252B3D440084FCBC /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				8ED6581F252C983E000A1BF6 /* ParentVC.swift */,
+				8ED65821252C98C9000A1BF6 /* HelperCustomNavigation.swift */,
+				8E140541252B3D300084FCBC /* Globals.swift */,
+				8E140543252B3D3B0084FCBC /* Extentions.swift */,
+				8E140546252B3D660084FCBC /* APIManager.swift */,
+				8E140552252B667A0084FCBC /* PresistanceManager.swift */,
+				68B50D24252F0AF4007A6891 /* Constants.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8E140505252B363C0084FCBC /* SwedBankHomeWork */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E140528252B363F0084FCBC /* Build configuration list for PBXNativeTarget "SwedBankHomeWork" */;
+			buildPhases = (
+				8E140502252B363C0084FCBC /* Sources */,
+				8E140503252B363C0084FCBC /* Frameworks */,
+				8E140504252B363C0084FCBC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwedBankHomeWork;
+			productName = SwedBankHomeWork;
+			productReference = 8E140506252B363C0084FCBC /* SwedBankHomeWork.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8E1404FE252B363C0084FCBC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1170;
+				LastUpgradeCheck = 1170;
+				ORGANIZATIONNAME = BenyaminMokhtarpour;
+				TargetAttributes = {
+					8E140505252B363C0084FCBC = {
+						CreatedOnToolsVersion = 11.7;
+					};
+				};
+			};
+			buildConfigurationList = 8E140501252B363C0084FCBC /* Build configuration list for PBXProject "SwedBankHomeWork" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8E1404FD252B363C0084FCBC;
+			productRefGroup = 8E140507252B363C0084FCBC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8E140505252B363C0084FCBC /* SwedBankHomeWork */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8E140504252B363C0084FCBC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8ED65824252CC335000A1BF6 /* iGap_fontico.ttf in Resources */,
+				8E140519252B363F0084FCBC /* LaunchScreen.storyboard in Resources */,
+				8E140516252B363F0084FCBC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8E140502252B363C0084FCBC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E140514252B363C0084FCBC /* SwedBankHomeWork.xcdatamodeld in Sources */,
+				8ED65820252C983E000A1BF6 /* ParentVC.swift in Sources */,
+				8E140535252B3BFB0084FCBC /* BankDetailsVC.swift in Sources */,
+				8E140544252B3D3B0084FCBC /* Extentions.swift in Sources */,
+				8ED65822252C98C9000A1BF6 /* HelperCustomNavigation.swift in Sources */,
+				8E14050E252B363C0084FCBC /* BankListsVC.swift in Sources */,
+				8E14054B252B48610084FCBC /* RegionsCell.swift in Sources */,
+				8ED6581E252C6319000A1BF6 /* BankObject+CoreDataProperties.swift in Sources */,
+				8ED65826252CD8E5000A1BF6 /* AvatarHolder.swift in Sources */,
+				8E140547252B3D660084FCBC /* APIManager.swift in Sources */,
+				68B50D25252F0AF4007A6891 /* Constants.swift in Sources */,
+				8E140551252B4D290084FCBC /* BankModel.swift in Sources */,
+				8E14050A252B363C0084FCBC /* AppDelegate.swift in Sources */,
+				8ED6582A252D9F6D000A1BF6 /* InnerDataVM.swift in Sources */,
+				8E14050C252B363C0084FCBC /* SceneDelegate.swift in Sources */,
+				8E14054F252B48990084FCBC /* InnerDataCell.swift in Sources */,
+				8E14054D252B488F0084FCBC /* LocationsCell.swift in Sources */,
+				8E140553252B667A0084FCBC /* PresistanceManager.swift in Sources */,
+				8ED6582C252DC136000A1BF6 /* HelpercustomIndicatorRefresh.swift in Sources */,
+				8E140538252B3C1F0084FCBC /* InnerDataVC.swift in Sources */,
+				8ED65828252D8941000A1BF6 /* BankDetailsVM.swift in Sources */,
+				8E140549252B3F360084FCBC /* BankListsVM.swift in Sources */,
+				8ED6581D252C6319000A1BF6 /* BankObject+CoreDataClass.swift in Sources */,
+				8E140542252B3D300084FCBC /* Globals.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8E140517252B363F0084FCBC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8E140518252B363F0084FCBC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8E140526252B363F0084FCBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8E140527252B363F0084FCBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8E140529252B363F0084FCBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2G5B2M429C;
+				INFOPLIST_FILE = SwedBankHomeWork/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = BenyaminMokhtarpour.SwedBankHomeWork;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8E14052A252B363F0084FCBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2G5B2M429C;
+				INFOPLIST_FILE = SwedBankHomeWork/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = BenyaminMokhtarpour.SwedBankHomeWork;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8E140501252B363C0084FCBC /* Build configuration list for PBXProject "SwedBankHomeWork" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E140526252B363F0084FCBC /* Debug */,
+				8E140527252B363F0084FCBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E140528252B363F0084FCBC /* Build configuration list for PBXNativeTarget "SwedBankHomeWork" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E140529252B363F0084FCBC /* Debug */,
+				8E14052A252B363F0084FCBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8E140512252B363C0084FCBC /* SwedBankHomeWork.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8E140513252B363C0084FCBC /* SwedBankHomeWork.xcdatamodel */,
+			);
+			currentVersion = 8E140513252B363C0084FCBC /* SwedBankHomeWork.xcdatamodel */;
+			path = SwedBankHomeWork.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 8E1404FE252B363C0084FCBC /* Project object */;
+}
